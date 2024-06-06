@@ -59,3 +59,13 @@ print(a.count('l', 1, 3)) # 在指定范围内查询
 # 9.字符串替换
 # replace() 替换字符串中的某个字符
 print(a.replace('l', 'x'))
+
+# 10.capitalize() 将字符串的第一个字符转换为大写，其余字符转换为小写
+a = "itSaysay"
+print(a.capitalize())
+
+# 11. lower() 大写字母转小写
+print(a.lower())
+
+# 12. upper() 小写字母转大写
+print(a.upper())
