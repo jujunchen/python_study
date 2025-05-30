@@ -36,3 +36,45 @@ def func3():
     func4()
     print("func3")
 func3()
+
+# 作用域，全局变量和局部变量
+# 全局变量使用global关键字声明
+
+#nonlocal 引用外部函数的变量，只能在嵌套函数中使用，嵌套函数中赋值，会改变外部变量的值，只能修改上一级函数
+a = 10
+def outer():
+    a = 20
+    def inner():
+        # nonlocal a
+        a = 30
+        print(a)
+    inner()
+    print(a)
+
+outer()
+
+# 函数默认参数，为参数提供默认值，可不传，但所有的位置参数必须出现在默认参数前，包括函数顶级和调用
+def func5(a, b=10):
+    print(a, b)
+
+func5(1)
+func5(1, 2)
+
+# 可变参数
+def func6(*args):
+    print(args)
+    print(type(args)) # 元组形式
+
+func6(1,2,3,4,5)
+
+# 关键字参数
+def func7(**kwargs):
+    print(kwargs) # 字典形式
+
+func7(a=1, b=2)
+
+# 匿名函数
+# lambda 参数列表: 函数体
+
+func8 = lambda a, b: a + b
+print(func8(1, 2))
