@@ -69,3 +69,27 @@ print(a.lower())
 
 # 12. upper() 小写字母转大写
 print(a.upper())
+
+# 字符串转换为整数
+a = '123'
+print(int(a))
+
+# 整数转换为字符串
+a = 123
+print(str(a))
+
+# 浮点数转换为整数
+a = 123.45
+print(int(a))
+
+# 整数转换为浮点数
+a = 123
+print(float(a))
+
+# 布尔值转换为整数
+a = True
+print(int(a))
+
+# 整数转换为布尔值
+a = 1
+print(bool(a))
